@@ -9,7 +9,7 @@ public aspect ObserverReporterAspect {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Method call to ");
 		sb.append(subject);
-		sb.append(" from");
+		sb.append(" from ");
 		sb.append(thisJoinPoint.getStaticPart().getSourceLocation());
 		System.out.println(sb.toString());
 	}
